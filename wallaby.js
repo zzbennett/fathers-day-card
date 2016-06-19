@@ -44,7 +44,7 @@ module.exports = function () {
         packageWithIndex: true // sadly, we can't use umd packages (yet?)
       });
 
-      System.import('systemjs.config.js')
+      System.import('app/systemjs.config.js')
         .then(function () {
           return Promise.all([
             System.import('@angular/core/testing'),
