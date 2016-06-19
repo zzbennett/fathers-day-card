@@ -1,9 +1,9 @@
 {
-  "name": "angular2-quickstart",
+  "name": "fathers-day-app",
   "version": "1.0.0",
   "description": "QuickStart package.json from the documentation, supplemented with testing support",
   "scripts": {
-    "start": "tsc && node ./bin/www",
+    "start": "DEBUG=fathers-day-app:*; tsc && node ./bin/www",
     "docker-build": "docker build -t ng2-quickstart .",
     "docker": "npm run docker-build && docker run -it --rm -p 3000:3000 -p 3001:3001 ng2-quickstart",
     "e2e": "tsc && concurrently \"http-server\" \"protractor protractor.config.js\"",
